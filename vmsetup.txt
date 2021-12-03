@@ -1,0 +1,32 @@
+sudo apt update && sudo apt upgrade
+
+wget https://repo.anaconda.com/miniconda/Miniconda3-py39_4.10.3-Linux-x86_64.sh
+bash https://repo.anaconda.com/miniconda/Miniconda3-py39_4.10.3-Linux-x86_64.sh
+
+wget https://go.microsoft.com/fwlink/?LinkID=760868
+
+sudo apt install git
+sudo apt install gcc
+sudo apt install make
+
+Installing GSL (GNU Scientific Library) from https://coral.ise.lehigh.edu/jild13/2016/07/11/hello/
+wget ftp://ftp.gnu.org/gnu/gsl/gsl-2.7.tar.gz
+tar -zxvf gsl-2.7.tar.gz
+cd gsl-2.7
+mkdir /home/NAMEOFUSER/gsl
+./configure --prefix=/home/NAMEOFUSER/gsl
+make
+make check
+make install
+
+Download Visual Studio Code from https://code.visualstudio.com/Download
+It's the .deb file for Debian, Ubuntu
+Open terminal (lctrl+lalt+t) 
+cd Downloads
+sudo apt install ./code_1.62.3-1637137107_amd64.deb 
+
+
+include_gsl_dir = "/home/NAMEOFUSER/gsl-2.7"
+lib_gsl_dir = "/usr/lib/x86_64-linux-gnu"
+
+Install VB
